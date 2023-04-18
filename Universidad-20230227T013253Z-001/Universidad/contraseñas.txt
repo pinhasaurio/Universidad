@@ -1,8 +1,9 @@
 microsoft
 brayan.maldonado@alumnos.ucn.cl
-Carmenluz1
+pass:Carmenluz1
+
 gmail brayan.maldonado@alumnos.ucn.cl
-Brayan 1999fbi
+pass:Brayan 1999fbi
 
 Banner : 20167907
 pass: Carmenluz1
