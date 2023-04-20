@@ -13,7 +13,7 @@
   )
 (print (generate 4))
 
-;Haga una función que vaya restando de izquierda a derecha todos los números de una lista. 
+;1) Haga una función que vaya restando de izquierda a derecha todos los números de una lista. 
 ;Ejemplo ‘(1 2 3) = -1 -2 -3 = -6
 
 (define (restLeftRight l)
@@ -25,3 +25,18 @@
   )
 
 (print (restLeftRight '(1 2 3)))
+
+;2. Haga una función que devuelva el número negativo de cada número de una lista.
+
+(define (negativeWay l)
+     (cond
+       [(null? l) 0]
+       
+       [(negative? (car l)) (cons (car l) (negativeWay (cdr l))) ]
+       [else (cons (* (car l) -1) (negativeWay (cdr l)))]
+
+     )
+
+
+)
+(print (negativeWay '(1 2 3)))
