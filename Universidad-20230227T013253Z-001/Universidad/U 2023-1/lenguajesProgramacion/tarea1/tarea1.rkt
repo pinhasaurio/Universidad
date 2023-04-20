@@ -30,7 +30,7 @@
 
 (define (negativeWay l)
      (cond
-       [(null? l) 0]
+       [(null? l) l]
        
        [(negative? (car l)) (cons (car l) (negativeWay (cdr l))) ]
        [else (cons (* (car l) -1) (negativeWay (cdr l)))]
