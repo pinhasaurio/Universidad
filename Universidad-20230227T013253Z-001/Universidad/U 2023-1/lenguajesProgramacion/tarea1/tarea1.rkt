@@ -40,3 +40,55 @@
 
 )
 (print (negativeWay '(1 2 3)))
+
+;3. Haga una función que reciba (x y) numéricos. Esta debe entregar el cuadrante en que se 
+;encuentran esas coordenadas.
+
+(define(cuadrante x y )
+  (if (negative? x)
+      (if (negative? y);t x es negativo
+          (print "3° cuadrante");t y es negativa
+          (print "2° cuadrante");f y no es negativa
+      )
+      (if(negative? y);f x no es negativo
+         (print "4° cuadrante");t y es negativa
+         (print "1° cuadrante");f y no es negativa
+      )   
+  )
+    
+    
+  
+)
+(cuadrante 5 -5)
+
+;combinaciones
+;+x+y-> 1° cuadrante
+;+x-y-> 4° cuadrante
+;-x+y-> 2° cuadrante
+;-x-y-> 3° cuadrante
+
+;4. Haga una función que cuente la longitud de un String.
+(define (stringLength str)
+  (cond
+    [(string? str) (display (format "el largo del string es: ~a" (string-length str)))]
+    [(print "la variable no es un string")]
+  )
+)
+(stringLength "holamundo")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
