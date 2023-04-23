@@ -76,6 +76,10 @@
 )
 (stringLength "holamundo")
 
+;5. Haga una función que cuente la cantidad de elementos de una lista sin usar (length )
+
+
+
 
 
 
