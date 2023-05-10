@@ -95,7 +95,18 @@
 (filtrar-factoriales '(1 2 3 4 5 6))
 
 
+;--------- practica para pp1---------------
+;Escriba una función que calcule el producto punto entre dos listas (mirar imagen). Por
+;ejemplo, (calcular-producto-punto '(6 2 5) ‘(2 0 10)) -> 62.
+(define (calcular-producto-punto l1 l2)
+  (cond
+    ((null? l1 or null l2 ) "es nula la lista")
+    ( (* (car l1) (car l2)   )          )
+  )
 
+       
+  
+)
 
 
 

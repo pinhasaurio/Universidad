@@ -80,8 +80,19 @@
 
 
 
+;. Haga una función que filtre los números que son resultados de un factorial de 1 a 10 (1 (1!), 2 
+;  (2!), 6 (3!), 24 (4!), etc) de una lista. Ejemplo: ‘(1 2 3 4 5 6) -> ‘(3 4 5)
+(define (filtrar-factoriales lista)
+  (define (factoriales-hasta n)
+    (if (= n 0)
+        '(1)
+        (cons (* n (car (factoriales-hasta (- n 1))))
+              (factoriales-hasta (- n 1)))))
+  (define factoriales (foldl append '() (map factoriales-hasta (range 1 11))))
+  (filter (lambda (x) (member x factoriales)) lista))
 
 
+(filtrar-factoriales '(1 2 3 4 5 6))
 
 
 
